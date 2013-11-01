@@ -1,47 +1,167 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Samwich by samwich</title>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Sam Johnson : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Sam Johnson</title>
   </head>
 
   <body>
-    <div id="container">
-      <div class="inner">
 
-        <header>
-          <h1>Samwich</h1>
-          <h2></h2>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/samwich">View on GitHub</a>
+
+          <h1 id="project_title">Sam Johnson</h1>
+          <h2 id="project_tagline"></h2>
+
         </header>
+    </div>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/samwich" rel="me" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p><a href="mailto:sam@samwich.com">sam@samwich.com</a> / <a href="http://www.linkedin.com/profile/view?id=21062260">LinkedIn</a></p>
 
-        <hr>
+<p>Sam lives in <a href="https://maps.google.com/maps?q=El+Cerrito,+CA&amp;hl=en&amp;sll=37.269174,-119.306607&amp;sspn=12.998261,16.831055&amp;oq=el+ce&amp;hnear=El+Cerrito,+Contra+Costa+County,+California&amp;t=m&amp;z=14">El Cerrito</a>.</p>
 
-        <section id="main_content">
-          <h3>Sam Johnson</h3>
+<h2>
+<a name="recent-projects" class="anchor" href="#recent-projects"><span class="octicon octicon-link"></span></a>Recent Projects</h2>
+
+<h3>
+<a name="chef-automation" class="anchor" href="#chef-automation"><span class="octicon octicon-link"></span></a>Chef automation</h3>
 
 <ul>
-<li><a href="https://github.com/samwich" rel="me">github.com/samwich</a></li>
+<li>~40 custom cookbooks for in-house applications</li>
+<li>~30 wrapper cookbooks to customize official cookbooks</li>
+<li>~90 server roles</li>
+<li>~5 Chef environments for development (one per team), one for staging, and one for production. All configuration changes can be tested before going into production.</li>
+<li>~400 nodes under Chef control</li>
+<li>OpsCode's hosted Chef service</li>
+<li>Berkshelf for cookbook dependancy management</li>
+<li>Chef search (elasticsearch) is used for configure-time service discovery. For instance, database master and slave servers can be taught to automatically discover each other, exchange credentials, and set up firewall rules to communicate with each other.</li>
+</ul><h3>
+<a name="component-readmes" class="anchor" href="#component-readmes"><span class="octicon octicon-link"></span></a>Component Readmes</h3>
+
+<p>This is an ongoing project to document each part of our system with an operations audience in mind.</p>
+
+<p>Readmes are the starting point for writing chef recipes, nagios checks, and emergency runbooks. Each readme includes everything you need to run and monitor a single component. They describe customer-facing components, back-end components, and 3rd party software used for internal infrastructure.</p>
+
+<p>Readmes are based on a standard template which includes:</p>
+
+<ul>
+<li>Availability Requirements</li>
+<li>Business effects - Availability requirements and customer-visible effects.</li>
+<li>Data responsibility. What data is this component responsible for and how do you make backups of it?</li>
+<li>Deployment considerations - special requirements for installation and upgrades</li>
+<li>Service Dependencies - which internal and 3rd party services/components does this component depend on?</li>
+<li>Architecture description - what kind of failures can it tolerate?</li>
+<li>Health check procedures - positive and negative health indicators</li>
+<li>Failover and disaster recovery procedures</li>
+<li>Routine maintenance procedures</li>
+<li>Known Operational Issues and Workarounds</li>
+</ul><h2>
+<a name="languages--frameworks" class="anchor" href="#languages--frameworks"><span class="octicon octicon-link"></span></a>Languages / Frameworks</h2>
+
+<ul>
+<li>Ruby
+
+<ul>
+<li>RVM, rubygems, Bundler</li>
+<li>Ruby on Rails 3, REST APIs</li>
+<li>Chef (berkshelf, knife-vsphere)</li>
+<li>Capistrano</li>
 </ul>
-        </section>
+</li>
+<li>JavaScript and CoffeeScript
 
-        <footer>
-          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
+<ul>
+<li>Ember.js and SproutCore</li>
+<li>Google Maps API (older versions)</li>
+</ul>
+</li>
+</ul><h2>
+<a name="software" class="anchor" href="#software"><span class="octicon octicon-link"></span></a>Software</h2>
 
-        
-      </div>
+<ul>
+<li>Subversion to Git transition, including introductory training</li>
+<li>MySQL - intermediate tuning, built-in replication</li>
+<li>RabbitMQ</li>
+<li>ZooKeeper</li>
+<li>Redis</li>
+<li>Memcached</li>
+<li>Amazon S3 (key/value store), Route53 (DNS), EC2</li>
+<li>Vagrant (automatic VM creation)</li>
+<li>Jenkins - basic</li>
+</ul><h2>
+<a name="software-development" class="anchor" href="#software-development"><span class="octicon octicon-link"></span></a>Software Development</h2>
+
+<ul>
+<li>Scrum</li>
+<li>introductory tech talks on Ruby and Git</li>
+<li>TDD/BDD with RSpec</li>
+</ul><h2>
+<a name="interests" class="anchor" href="#interests"><span class="octicon octicon-link"></span></a>Interests</h2>
+
+<ul>
+<li>Tools to reinforce good development habits like using Gerrit to make code reviews an automatic part of the develoment process.</li>
+<li>Present common operational tasks through an easily customizable UI like Jenkins so that these tasks are easy to perform in a consistent manner and there is a record of who made a change and when it was made.</li>
+</ul><h2>
+<a name="things-id-like-to-work-on" class="anchor" href="#things-id-like-to-work-on"><span class="octicon octicon-link"></span></a>Things I'd like to work on</h2>
+
+<h3>
+<a name="concepts--architecture--ideas" class="anchor" href="#concepts--architecture--ideas"><span class="octicon octicon-link"></span></a>Concepts / Architecture / Ideas</h3>
+
+<ul>
+<li>Comprehensive automation.
+
+<ul>
+<li>Your infrastructure configuration should be described in a machine readable format and stored in a revision control system</li>
+<li>You should be able to configure a whole datacenter without manual intervention.</li>
+<li>If you find it necessary to log in to a system to perform an action, you should open a ticket so that your task can eventually be automated.</li>
+</ul>
+</li>
+<li>Orchestration - how do you model, automate, and change-manage operational events like software upgrades, architectural changes, datacenter moves, failover events, etc-</li>
+<li>Share-nothing / eventually consistent architectures like Wave Operational Transform, Dynamo/Cassandra/Riak, etc.</li>
+<li>Lots of things that we don't think of as products need product management</li>
+</ul><h3>
+<a name="specific-software" class="anchor" href="#specific-software"><span class="octicon octicon-link"></span></a>Specific Software</h3>
+
+<ul>
+<li>logstash / kibana / elasticsearch</li>
+<li>
+<a href="http://mesos.apache.org/">http://mesos.apache.org/</a> Cluster manager. like google borg, but from twitter</li>
+<li>
+<a href="http://airbnb.github.io/chronos/">http://airbnb.github.io/chronos/</a> cron replacement that runs on top of Mesos</li>
+<li>Cassandra or Riak</li>
+<li>Linux containers / BSD jails / Solaris Zones</li>
+<li>Some kind of SQL proxy to support transparent failover to a hot spare</li>
+</ul><h2>
+<a name="other-interests" class="anchor" href="#other-interests"><span class="octicon octicon-link"></span></a>Other Interests</h2>
+
+<ul>
+<li>coffee (ex-barrista)</li>
+<li>cars, from a technical standpoint (ex-mechanic)</li>
+<li>armchair cognitive science</li>
+<li>woodworking</li>
+</ul>
+      </section>
     </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
   </body>
 </html>
