@@ -49,7 +49,7 @@
 <li>Berkshelf for cookbook dependancy management</li>
 <li>Chef search (elasticsearch) is used for configure-time service discovery. For instance, database master and slave servers can be taught to automatically discover each other, exchange credentials, and set up firewall rules to communicate with each other.</li>
 </ul><h3>
-<a name="component-readmes" class="anchor" href="#component-readmes"><span class="octicon octicon-link"></span></a>Component Readmes</h3>
+<a name="component-readmes" class="anchor" href="#component-readmes"><span class="octicon octicon-link"></span></a>Operations Handoff Documents (aka Component Readmes)</h3>
 
 <p>This is an ongoing project to document each part of our system with an operations audience in mind.</p>
 
@@ -61,7 +61,7 @@
 
 <ul>
 <li>Availability Requirements</li>
-<li>Business effects - Availability requirements and customer-visible effects.</li>
+<li>Business effects - including customer-visible effects.</li>
 <li>Data responsibility. What data is this component responsible for and how do you make backups of it?</li>
 <li>Deployment considerations - special requirements for installation and upgrades</li>
 <li>Service Dependencies - which internal and 3rd party services/components does this component depend on?</li>
@@ -96,7 +96,7 @@
 <ul>
 <li>Subversion to Git transition, including introductory training</li>
 <li>MySQL - intermediate tuning, built-in replication</li>
-<li>RabbitMQ</li>
+<li>RabbitMQ, bunny AMQP gem</li>
 <li>ZooKeeper</li>
 <li>Redis</li>
 <li>Memcached</li>
@@ -127,20 +127,21 @@
 </li>
 <li>Orchestration - how do you model, automate, and change-manage operational events like software upgrades, architectural changes, datacenter moves, failover events, etc-</li>
 <li>Share-nothing / eventually consistent architectures like Wave Operational Transform, Dynamo/Cassandra/Riak, etc.</li>
-<li>Tools to reinforce good development habits like using Gerrit to make code reviews an automatic part of the develoment process.</li>
+<li>Tools to reinforce good development habits like using Gerrit or Github pull requests to make code reviews an automatic part of the develoment process.</li>
 <li>Present common operational tasks through an easily customizable UI like Jenkins so that these tasks are easy to perform in a consistent manner and there is a record of who made a change and when it was made.</li>
 </ul><h3>
-<a name="specific-software" class="anchor" href="#specific-software"><span class="octicon octicon-link"></span></a>Specific Software</h3>
+<a name="specific-software" class="anchor" href="#specific-software"><span class="octicon octicon-link"></span></a>Specific Software I'd like to work with</h3>
 
 <ul>
-<li>logstash / kibana / elasticsearch</li>
+<li>Elasticsearch / Logstash / Kibana</li>
+<li>Clojure and its ecosystem</li>
 <li>
-<a href="http://mesos.apache.org/">http://mesos.apache.org/</a> Cluster manager. like google borg, but from twitter</li>
+<a href="http://mesos.apache.org/">http://mesos.apache.org/</a> Cluster manager. Like Google's borg, but from Twitter and UC Berkeley</li>
 <li>
 <a href="http://airbnb.github.io/chronos/">http://airbnb.github.io/chronos/</a> cron replacement that runs on top of Mesos</li>
 <li>Cassandra or Riak</li>
-<li>Linux containers / BSD jails / Solaris Zones</li>
-<li>Some kind of SQL proxy to support transparent failover to a hot spare</li>
+<li>Docker - (Linux containers / BSD jails / Solaris Zones)</li>
+<li>CoreOS - A Docker based linux distribution with a mostly read-only root filesystem.</li>
 </ul><h2>
 <a name="other-interests" class="anchor" href="#other-interests"><span class="octicon octicon-link"></span></a>Other Interests</h2>
 
